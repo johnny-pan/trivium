@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  trivium-.py
+#  trivium2.py
 #  
 #  Copyright 2016 Johnny Pan <codeskill@gmail.com>
 #  
