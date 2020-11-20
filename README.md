@@ -2,13 +2,15 @@
 
 Implementación del algoritmo de cifrado **Trivium** utilizando Python.
 
-![Diagrama de Trivium](https://en.wikipedia.org/wiki/Trivium_%28cipher%29#/media/File:Trivium_(cipher).png)
+<img src="trivium.png" alt="Diagrama de Trivium" width="300"/>
 
 # Algoritmo Trivium
 
 Trivium es un algoritmo de encriptación simétrica creado por Christophe De Cannière and Bart Preneel para el proyecto `eSTREAM` el cual se llevó a cabo entre los años 2004 y 2008. Este algoritmo está diseñado especialmente para ser implementado fácilmente en hardware, es altamente paralelizable y de licencia libre.
 
 Este algoritmo de cifrado es de tipo `Stream Cipher`, esto quiere decir que es capaz de generar un `keystream` de tamaño 2<sup>64</sup> bits a partir de una llave privada de 80 bits y de un vector inicial de 80 bits. El algoritmo de cifrado se divide en dos partes; la inicialización del estado interno y la generación del keystream. El estado interno está formado por 288 bits.
+
+<img src="stream_cipher.png" alt="Stream Cipher" width="500"/>
 
 El proceso de inicialización del estado interno **S** consiste en los siguientes pasos:
 
@@ -40,3 +42,7 @@ python2 trivium2.py
 ```shell
 python3 trivium3.py
 ```
+# Demo
+
+<img src="trivium_demo.png" alt="Demo Trivium"/>
+
