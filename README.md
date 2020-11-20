@@ -23,7 +23,7 @@ El proceso de inicialización del estado interno **S** consiste en los siguiente
 - Se asigna cero a las localidades 178 a 285 y uno a las localidades 286 a 288 del estado interno:
 (S<sub>178</sub>,S<sub>179</sub>,S<sub>180</sub>, ... , S<sub>288</sub>) &#8592; (0, ... ,0,1,1,1).
 
-El proceso de generación de llave se hace una vez inicializado el estado interno s y se realiza con el algoritmo mostrado en la figura 2, donde la operación `a + b` equivale
+El proceso de generación de llave se hace una vez inicializado el estado interno **S**, donde la operación `a + b` equivale
 a la operación lógica **OR**, y la operación `a ∙ b` equivale a la operación lógica **AND**.
 
 Al finalizar cada iteración, se obtiene el bit del `keystream` al cual se le aplica la operación lógica **OR-Exclusiva** para el cifrado del texto.
