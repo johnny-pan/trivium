@@ -126,7 +126,7 @@ class Trivium:
 				plaintext_bin.append(self._gen_keystream() ^ int(ciphertext_bin[i]))
 
 		plaintext_hex = bits_to_hex(plaintext_bin)
-		plaintext = codecs.decode(plaintext_hex,'hex').decode('ascii')
+		plaintext = codecs.decode(plaintext_hex,'hex').decode('ascii','ignore')
 		return plaintext
 
 	def keystream(self):
